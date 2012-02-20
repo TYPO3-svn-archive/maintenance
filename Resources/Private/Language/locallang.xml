@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Maintenance Module labels</description>
+		<type>module</type>
+		<fileId>EXT:maintenance/locallang.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="maintenance">Maintenance</label>
+
+			<!-- Toolbar -->
+			<label index="toolbaritem-active">Switch TYPO3 installation back out of maintenance mode!</label>
+			<label index="toolbaritem-inactive">Switch TYPO3 installation into maintenance mode!</label>
+			<label index="toolbaritem.extDirect.result.-100.title">Maintenance mode FAILED!</label>
+			<label index="toolbaritem.extDirect.result.-100.message">Houston, we've Got a Problem! Please check your report module for details and try it again after a reconfiguration.</label>
+			<label index="toolbaritem.extDirect.result.100.title">Maintenance mode ACTIVE!</label>
+			<label index="toolbaritem.extDirect.result.100.message">The maintenance mode of your TYPO3 instance was switched <![CDATA[<b>]]>ON<![CDATA[</b>]]>.<![CDATA[<br />]]> Let the maintenance work begin!</label>
+			<label index="toolbaritem.extDirect.result.200.title">Maintenance mode INACTIVE!</label>
+			<label index="toolbaritem.extDirect.result.200.message">The maintenance mode of your TYPO3 instance was switched <![CDATA[<b>]]>OFF<![CDATA[</b>]]>.<![CDATA[<br />]]> We are back, again! Good work!</label>
+
+			<!-- Extension manager -->
+			<label index="extensionManager.adminOnly">[BE][adminOnly] Setting: Who has access to the backend during maintenance mode? This setting will be automatically set, if maintenance mode is activated. Value "2" is preferred. Possible values: -1 => total shutdown for maintenance purposes; 0 => normal operation, everyone can login (default); 1 => only admins can login; 2 => only admins and regular CLI users can login.</label>
+
+			<!-- Report module -->
+			<label index="report.configuration.devIPMask.title">Setting ['SYS']['devIPmask']</label>
+			<label index="report.configuration.devIPMask.result.20">Your DevIPMask is configured correctly. If you switch to maintenance mode, you will see the normal page. Other people will see your nice "We are working for YOU!"-Page :)</label>
+			<label index="report.configuration.devIPMask.result.40">You didn`t configured a DevIPMask. Why? It doesn`t hurt. So go to the install tool and set a mask which will be match to your IP address.</label>
+			<label index="report.configuration.devIPMask.result.60">Your configured DevIPMask setting doesn`t match your ip address. Why? This is not good. Please, reconfigure it in the install tool.</label>
+			<label index="report.configuration.pageUnavailableHandling.title">Setting ['FE']['pageUnavailable_handling']</label>
+			<label index="report.configuration.pageUnavailableHandling.result.-20">Do you have a typo? The configured dile was not found! Place it in the configured folder of your document root and all will be fine :)</label>
+			<label index="report.configuration.pageUnavailableHandling.result.20">Standard TYPO3 error page: "Page Not Found - The page did not exist or was inaccessible...". Configure this more userfriendly. You can do it!</label>
+			<label index="report.configuration.pageUnavailableHandling.result.40">You have configured a user function. This function will be called in maintenance mode. Cool!</label>
+			<label index="report.configuration.pageUnavailableHandling.result.60">The configured file will be shown in maintenance mode. Yeah!</label>
+			<label index="report.configuration.pageUnavailableHandling.result.80">The user will be redirected in maintenance mode. Very cool way.</label>
+			<label index="report.configuration.pageUnavailableHandling.result.100">The output of this site will be shown in maintenance mode. Looks good?</label>
+			<label index="report.configuration.pageUnavailableHandling.result.120">Nothing is configured :( So, the standard TYPO3 error page will show a "Page Not Found". Go to install tool and configure this more userfriendly. You can do it!</label>
+			<label index="report.configuration.pageUnavailableHandlingStatheader.title">Setting ['FE']['pageUnavailable_handling_statheader']</label>
+			<label index="report.configuration.pageUnavailableHandlingStatheader.result.20">Wow! You have configured some nice header! But why is there no "HTTP/1.0 503 Service Temporarily Unavailable"?<![CDATA[<br />]]> Visitors or Google could think you are down for a long time. Set this header and you are on the right side!</label>
+			<label index="report.configuration.pageUnavailableHandlingStatheader.result.40">Wow! You have configured some nice header! With "HTTP/1.0 503 Service Temporarily Unavailable" nothing can go wrong. Google will come back to you!</label>
+			<label index="report.configuration.pageUnavailableHandlingStatheader.result.60">No header is configured. Why? Be so nice and configure a header. In this way browser and crawler (like Google-Bot) will be noticed that this site is not down for a long time. So the will be come back. The default / preferred setting is "HTTP/1.0 503 Service Temporarily Unavailable".</label>
+		</languageKey>
+	</data>
+</T3locallang>

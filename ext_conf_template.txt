@@ -1,0 +1,2 @@
+	# cat=basic/11; type=options[,-1,0,1,2]; label=LLL:EXT:maintenance/Resources/Private/Language/locallang.xml:extensionManager.adminOnly
+adminOnly =
