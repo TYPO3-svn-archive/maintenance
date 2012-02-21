@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "maintenance".
 #
-# Auto generated 21-02-2012 16:01
+# Auto generated 21-02-2012 16:14
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
