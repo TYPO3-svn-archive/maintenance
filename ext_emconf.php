@@ -33,7 +33,7 @@ In maintenance mode you can easily deploy new features, make bigger update opera
 	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'php' => '5.0.0-5.3.99',
+			'php' => '5.0.0-5.4.99',
 			'typo3' => '4.5.0-4.7.99',
 		),
 		'conflicts' => array(

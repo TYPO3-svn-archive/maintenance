@@ -53,11 +53,11 @@ class Tx_Maintenance_Reports_Configuration implements tx_reports_StatusProvider 
 			$result = $configurationObj->getResult();
 
 				// Get title
-			$localLangName = $localLangPrefix . lcfirst($config['class']) . '.title';
+			$localLangName = $localLangPrefix . t3lib_div::lcfirst($config['class']) . '.title';
 			$title = $GLOBALS['LANG']->sL($localLangName);
 
 				// Get message
-			$localLangName = $localLangPrefix . lcfirst($config['class']) . '.result.' . $result['code'];
+			$localLangName = $localLangPrefix . t3lib_div::lcfirst($config['class']) . '.result.' . $result['code'];
 			$message = $GLOBALS['LANG']->sL($localLangName);
 
 			$statuses[$config['class']] = t3lib_div::makeInstance('tx_reports_reports_status_Status',

@@ -1,3 +1,7 @@
 2012-02-21 Andy Grunwald  <andygrunwald@gmail.com>
 
+	* Fixed bug #34612: Fatal error: Call to undefined function lcfirst() in maintenance/Classes/Reports/Configuration.php on line 56
+
+2012-02-21 Andy Grunwald  <andygrunwald@gmail.com>
+
 	* Release of version 1.0.0
