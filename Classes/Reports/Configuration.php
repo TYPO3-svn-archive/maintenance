@@ -52,6 +52,15 @@ class Tx_Maintenance_Reports_Configuration implements tx_reports_StatusProvider 
 			$configurationObj->checkValue();
 			$result = $configurationObj->getResult();
 
+				// Some checks need special handling for EXT:reports only
+				// so, this is done in the following switch ;)
+			switch($config['class']) {
+				case 'DevIPMask':
+					$result = $this->getStatusOfDevIPMask($result);
+					break;
+				default:
+			}
+
 				// Get title
 			$localLangName = $localLangPrefix . t3lib_div::lcfirst($config['class']) . '.title';
 			$title = $GLOBALS['LANG']->sL($localLangName);
@@ -69,6 +78,35 @@ class Tx_Maintenance_Reports_Configuration implements tx_reports_StatusProvider 
 		}
 
 		return $statuses;
+	}
+
+	/**
+	 * Special handling of DevIPMask-Setting for Report module.
+	 *
+	 * If pageUnavailable_force is disabled, the report of DevIPMask
+	 * will be inactive, because the scheduler task of EXT:reports will
+	 * notify every failed report. This report is only important if Maintenance mode is active.
+	 *
+	 * @see http://forge.typo3.org/issues/34229 for more information.
+	 *
+	 * @param	array	$result		Result of Tx_Maintenance_Configuration_DevIPMask->getResult() after checkValue()
+	 * @return 	array	$result		Modified Result-Array after special handling
+	 */
+	protected function getStatusOfDevIPMask(array $result) {
+		if(!$GLOBALS['TYPO3_CONF_VARS']['FE']['pageUnavailable_force']) {
+			$result['severity'] = tx_reports_reports_status_Status::NOTICE;
+
+				// If the configured IP address will match
+			if($result['code'] === 20) {
+				$result['code'] = 100;
+
+				// If the configured IP address will not matched
+			} else {
+				$result['code'] = 80;
+			}
+		}
+
+		return $result;
 	}
 }
 ?>

@@ -26,9 +26,11 @@
 
 			<!-- Report module -->
 			<label index="report.configuration.devIPMask.title">Setting ['SYS']['devIPmask']</label>
-			<label index="report.configuration.devIPMask.result.20">Your DevIPMask is configured correctly. If you switch to maintenance mode, you will see the normal page. Other people will see your nice "We are working for YOU!"-Page :)</label>
+			<label index="report.configuration.devIPMask.result.20">Your DevIPMask is configured correctly. You will see the normal page. Other people will see your nice "We are working for YOU!"-Page :)</label>
 			<label index="report.configuration.devIPMask.result.40">You didn`t configured a DevIPMask. Why? It doesn`t hurt. So go to the install tool and set a mask which will be match to your IP address.</label>
 			<label index="report.configuration.devIPMask.result.60">Your configured DevIPMask setting doesn`t match your ip address. Why? This is not good. Please, reconfigure it in the install tool.</label>
+			<label index="report.configuration.devIPMask.result.80">Report for DevIPMask is disabled. This report is only active in maintenance mode. But anyhow, your setting doesn`t match your ip address. Why? This is not good. Please, reconfigure it in the install tool.</label>
+			<label index="report.configuration.devIPMask.result.100">Report for DevIPMask is disabled. This report is only active in maintenance mode. But anyhow, your DevIPMask is configured correctly. If you switch to maintenance mode, you will see the normal page. Other people will see your nice "We are working for YOU!"-Page :).</label>
 			<label index="report.configuration.pageUnavailableHandling.title">Setting ['FE']['pageUnavailable_handling']</label>
 			<label index="report.configuration.pageUnavailableHandling.result.-20">Do you have a typo? The configured dile was not found! Place it in the configured folder of your document root and all will be fine :)</label>
 			<label index="report.configuration.pageUnavailableHandling.result.20">Standard TYPO3 error page: "Page Not Found - The page did not exist or was inaccessible...". Configure this more userfriendly. You can do it!</label>

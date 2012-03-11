@@ -1,4 +1,8 @@
-2012-02-21 Andy Grunwald  <andygrunwald@gmail.com>
+2012-03-11 Andy Grunwald  <andygrunwald@gmail.com>
+
+	* Fixed bug #34229: DevIpMask check and reports emails
+
+2012-03-06 Andy Grunwald  <andygrunwald@gmail.com>
 
 	* Fixed bug #34612: Fatal error: Call to undefined function lcfirst() in maintenance/Classes/Reports/Configuration.php on line 56
 
