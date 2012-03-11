@@ -1,5 +1,6 @@
 2012-03-11 Andy Grunwald  <andygrunwald@gmail.com>
 
+	* Release of version 1.0.1
 	* Fixed bug #34229: DevIpMask check and reports emails
 
 2012-03-06 Andy Grunwald  <andygrunwald@gmail.com>
