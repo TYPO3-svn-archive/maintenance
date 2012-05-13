@@ -138,7 +138,7 @@ class Tx_Maintenance_ExtDirect_ToolbarItem {
 
 			// If extension manager setting is not set OR
 			// values in install tool and extension manager are equal, nothing to do, exit here
-		if(!$extensionManagerSetting || !strcmp($installToolSetting, $extensionManagerSetting)) {
+		if(!$extensionManagerSetting || (!strcmp($installToolSetting, $extensionManagerSetting) && !$pageUnavailableForce)) {
 			return $linesToWrite;
 		}
 

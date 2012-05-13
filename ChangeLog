@@ -1,3 +1,7 @@
+2012-05-13 Andy Grunwald  <andygrunwald@gmail.com>
+
+	* Fixed bug #35838: Extension configuration adminOnly is not working
+
 2012-03-11 Andy Grunwald  <andygrunwald@gmail.com>
 
 	* Release of version 1.0.1
